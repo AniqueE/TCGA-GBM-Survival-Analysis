@@ -45,10 +45,11 @@ Both are TCGA open-access data; use is subject to the
 ## Repository structure
 
 ```
-GBM.R  the full analysis pipeline, run top to bottom
-data/df_gene_count.csv.gz  filtered gene count matrix (19,414 genes x 122 patients ) data/df_phenotype table.csv.gz  filtered clinical phenotype table (122 patients)
-results/         output tables 
-figures/         figures as they appear in the write-up
+GBM.R                        the full analysis pipeline, run top to bottom
+data/df_gene_count.csv.gz    filtered gene count matrix (19,414 genes x 122 patients)
+data/df_phenotype.csv.gz     filtered clinical phenotype table (122 patients)
+results/                     output tables
+figures/                     figures as they appear in the write-up
 ```
 
 ---
@@ -74,7 +75,7 @@ comments and appear in this order:
 | 10 | Variance-stabilising transformation and candidate gene set |
 | 11 | Univariate Cox proportional hazards regression |
 | 12 | LASSO-Cox regression |
-| 13 | Risk score model and evaluation plots |s
+| 13 | Risk score model and evaluation plots |
 | 14 | Signature gene Kaplan-Meier curves |
 | 15 | Signature gene boxplots |
 | 16 | Multivariate Cox model and proportional hazards assumption |
