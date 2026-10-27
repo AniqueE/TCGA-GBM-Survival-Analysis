@@ -45,9 +45,9 @@ Both are TCGA open-access data; use is subject to the
 ## Repository structure
 
 ```
-GBM_analysis.R   the full analysis pipeline, run top to bottom
-data/            filtered expression matrix and phenotype table (.csv.gz)
-results/         output tables (DEG lists, enrichment results, survival metrics)
+GBM.R  the full analysis pipeline, run top to bottom
+data/df_gene_count.csv.gz  filtered gene count matrix (19,414 genes x 122 patients ) data/df_phenotype table.csv.gz  filtered clinical phenotype table (122 patients)
+results/         output tables 
 figures/         figures as they appear in the write-up
 ```
 
@@ -55,7 +55,7 @@ figures/         figures as they appear in the write-up
 
 ## Running the analysis
 
-The whole pipeline is in a single script, `GBM_analysis.R`, which is run from top to
+The whole pipeline is in a single script, `GBM.R`, which is run from top to
 bottom in a clean R session. Each section depends on objects created by the sections
 before it, so the script cannot be run out of order. Sections are marked with banner
 comments and appear in this order:
